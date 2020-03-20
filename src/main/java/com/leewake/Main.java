@@ -43,23 +43,4 @@ public class Main {
             e.printStackTrace();
         }
     }
-
-    /*public static void main(String[] args) {
-        VariableHolder variable = null;
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-            String input = scanner.nextLine();
-            baseCalculate(variable, input);
-        }
-    }
-
-    private static void baseCalculate(VariableHolder variable, String input) {
-        if (variable == null) {
-            variable = new VariableHolder(input);
-        } else {
-            variable.setExpression(input);
-        }
-        StackableFactory.create(variable);
-    }*/
-
 }

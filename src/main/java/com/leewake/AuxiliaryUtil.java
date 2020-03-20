@@ -19,8 +19,8 @@ public class AuxiliaryUtil {
      */
     public static void addLogList(Stack<BigDecimal> numbers, Stack<List<BigDecimal>> logList) {
         List<BigDecimal> numbersList = new ArrayList<>();
-        for (BigDecimal d : numbers) {
-            numbersList.add(d);
+        for (BigDecimal num : numbers) {
+            numbersList.add(num);
         }
         logList.push(numbersList);
     }
@@ -41,6 +41,12 @@ public class AuxiliaryUtil {
         System.out.println();
     }
 
+    /**
+     * <B>Description:</B> 打印非参数 <br>
+     * <B>Create on:</B> 2020/3/20 下午3:23 <br>
+     *
+     * @author leewake
+     */
     public static  void printInsufficientParameters(String token, int index) {
         StringBuilder stringBuilder = new StringBuilder("operator ");
         stringBuilder.append(token).append(" (position: ").append(index * 2 + 1).append("): insufficient parameters ");

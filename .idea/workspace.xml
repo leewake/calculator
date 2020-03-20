@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperatorUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OperatorUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+            <state relative-caret-position="-73">
+              <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +45,20 @@
       <file leaf-file-name="AuxiliaryUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+            <state relative-caret-position="221">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -67,8 +75,8 @@
       <file leaf-file-name="RPNCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="279">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CalculatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="340">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,8 +176,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/RPNCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" />
       </list>
@@ -334,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.exampleEightTest">
+  <component name="RunManager" selected="JUnit.CalculatorTest.exampleOneTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leewake.Main" />
       <module name="calculator" />
@@ -464,8 +472,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculatorTest.exampleEightTest" />
         <item itemvalue="JUnit.CalculatorTest.exampleOneTest" />
+        <item itemvalue="JUnit.CalculatorTest.exampleEightTest" />
         <item itemvalue="JUnit.CalculatorTest.ExampleOneTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CalculatorTest.plusTest" />
@@ -482,20 +490,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584586742179</updated>
-      <workItem from="1584586745674" duration="31493000" />
+      <workItem from="1584586745674" duration="32465000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 06s.xml">
-      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 21s.xml">
-      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 41s.xml">
-      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 59m 24s.xml">
       <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
@@ -517,9 +516,18 @@
     <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 04m 23s.xml">
       <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CalculatorTest_exampleOneTest - 2020.03.20 at 15h 11m 47s.xml">
+      <configuration name="CalculatorTest.exampleOneTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 12m 17s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 12m 36s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31493000" />
+    <option name="totallyTimeSpent" value="32465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -638,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -717,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="219" column="13" selection-start-line="219" selection-start-column="13" selection-end-line="219" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -790,16 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -821,20 +805,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="65">
+          <caret line="801" column="36" selection-start-line="801" selection-start-column="15" selection-end-line="801" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#15818#15819#0" expanded="true" />
+            <element signature="e#15875#15876#0" expanded="true" />
+            <element signature="e#34114#34115#0" expanded="true" />
+            <element signature="e#34170#34171#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        <state relative-caret-position="221">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -843,8 +837,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+        <state relative-caret-position="-73">
+          <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -868,7 +882,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -880,7 +894,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Python 2.7 (scms) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
