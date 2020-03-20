@@ -12,7 +12,6 @@ import java.util.Stack;
 /**
  * @description: RPN计算器
  * @author: leewake
- * @create: 2020-03-19 11:04
  **/
 public class RPNCalculator {
 
@@ -25,7 +24,7 @@ public class RPNCalculator {
 
     /**
      * <B>Description:</B> 计算逻辑入口 <br>
-     * <B>Create on:</B> 2020/3/20 上午11:30 <br>
+     * <B>Create on:</B> 2020/3/20 上午12:50 <br>
      *
      * @author leewake
      */
@@ -59,7 +58,7 @@ public class RPNCalculator {
 
     /**
      * <B>Description:</B> 如果待入栈的是操作符,处理逻辑 <br>
-     * <B>Create on:</B> 2020/3/20 下午3:28 <br>
+     * <B>Create on:</B> 2020/3/20 下午13:10 <br>
      *
      * @author leewake
      */

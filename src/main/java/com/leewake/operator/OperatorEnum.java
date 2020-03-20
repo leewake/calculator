@@ -1,5 +1,10 @@
 package com.leewake.operator;
 
+/**
+ * <B>Description:</B> 操作符枚举类 <br>
+ *
+ * @author leewake
+ */
 public enum OperatorEnum {
 
     ADD("+", "加"),

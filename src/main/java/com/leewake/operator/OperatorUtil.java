@@ -13,7 +13,6 @@ public class OperatorUtil {
 
     /**
      * <B>Description:</B> 判断是不是数字 <br>
-     * <B>Create on:</B> 2020/3/20 下午3:24 <br>
      *
      * @author leewake
      */
@@ -29,7 +28,6 @@ public class OperatorUtil {
 
     /**
      * <B>Description:</B> 加减乘除的基本计算 <br>
-     * <B>Create on:</B> 2020/3/20 上午11:37 <br>
      *
      * @author leewake
      */
@@ -61,7 +59,6 @@ public class OperatorUtil {
 
     /**
      * <B>Description:</B> 开方计算 <br>
-     * <B>Create on:</B> 2020/3/20 下午3:24 <br>
      *
      * @author leewake
      */
@@ -96,7 +93,6 @@ public class OperatorUtil {
 
     /**
      * <B>Description:</B> 回退操作 <br>
-     * <B>Create on:</B> 2020/3/20 上午11:38 <br>
      *
      * @author leewake
      */
@@ -119,7 +115,6 @@ public class OperatorUtil {
 
     /**
      * <B>Description:</B> 清屏操作 <br>
-     * <B>Create on:</B> 2020/3/20 上午11:38 <br>
      *
      * @author leewake
      */
