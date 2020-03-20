@@ -5,6 +5,7 @@ import com.leewake.operator.OperatorEnum;
 import com.leewake.operator.OperatorUtil;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
@@ -20,6 +21,8 @@ public class RPNCalculator {
     // 报错栈数据的操作日志
     private Stack<List<BigDecimal>> logList = new Stack<>();
 
+    private List<String> notPushStrList = new ArrayList<>();
+
     /**
      * <B>Description:</B> 计算逻辑入口 <br>
      * <B>Create on:</B> 2020/3/20 上午11:30 <br>
@@ -31,8 +34,16 @@ public class RPNCalculator {
         String[] input = expression.split(" ");
         int inputLength = input.length;
 
+        //用于非法参数后记录剩余的数字与操作符
+        boolean exceptionFlag = false;
+
         for (int i = 0; i < inputLength; i++) {
             String token = input[i];
+
+            if (exceptionFlag) {
+                notPushStrList.add(token);
+                continue;
+            }
 
             // 待入栈的是数字,直接入数据栈,并记录操作日志
             if (OperatorUtil.isNumber(token)) {
@@ -55,6 +66,7 @@ public class RPNCalculator {
                         AuxiliaryUtil.addLogList(numberStack, logList);
                     } else {
                         AuxiliaryUtil.printInsufficientParameters(token, i);
+                        exceptionFlag = true;
                     }
                     break;
                 case SQRT:
@@ -63,6 +75,7 @@ public class RPNCalculator {
                         AuxiliaryUtil.addLogList(numberStack, logList);
                     } else {
                         AuxiliaryUtil.printInsufficientParameters(token, i);
+                        exceptionFlag = true;
                     }
                     break;
                 case UNDO:
@@ -77,6 +90,8 @@ public class RPNCalculator {
         }
 
         AuxiliaryUtil.printStack(numberStack);
+
+        AuxiliaryUtil.printAfterMeetException(notPushStrList);
     }
 
 }

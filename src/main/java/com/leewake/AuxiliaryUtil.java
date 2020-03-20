@@ -1,5 +1,7 @@
 package com.leewake;
 
+import cn.hutool.core.collection.CollectionUtil;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -40,11 +42,33 @@ public class AuxiliaryUtil {
     }
 
     public static  void printInsufficientParameters(String token, int index) {
-        StringBuilder stringBuilder = new StringBuilder("token ");
+        StringBuilder stringBuilder = new StringBuilder("operator ");
         stringBuilder.append(token).append(" (position: ").append(index * 2 + 1).append("): insufficient parameters ");
         System.out.println(stringBuilder.toString());
-//        System.out.print("token " + token + " (position: " + (index * 2 + 1) + "): insufficient parameters ");
 
+    }
+
+    /**
+     * <B>Description:</B> 打印非参数后异常情况 <br>
+     * <B>Create on:</B> 2020/3/20 下午3:07 <br>
+     *
+     * @author leewake
+     */
+    public static  void printAfterMeetException(List<String> strList) {
+        if (CollectionUtil.isEmpty(strList))
+            return;
+
+        int size = strList.size();
+        StringBuilder stringBuilder = new StringBuilder("(the ");
+        for (int i = 0; i < size; i++) {
+            if (i == size - 1) {
+                stringBuilder.replace(stringBuilder.length() - 2, stringBuilder.length(), " and ").append(strList.get(i));
+            } else {
+                stringBuilder.append(strList.get(i)).append(", ");
+            }
+        }
+        stringBuilder.append(" were not pushed on to the stack due to the previous error)");
+        System.out.println(stringBuilder.toString());
     }
 
     /**

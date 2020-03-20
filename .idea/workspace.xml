@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcb256d-56b4-48d4-bb8c-c816048f5a98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Caculate.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/RPNCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/RPNException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/VariableHolder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/stack/Stackable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/stack/StackableFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/stack/StackableNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/stack/StackableOperator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CaculateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,17 +24,18 @@
             <state relative-caret-position="215">
               <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <marker date="1584684515000" expanded="true" signature="687:1299" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperatorUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OperatorUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="2057">
+              <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +46,8 @@
       <file leaf-file-name="AuxiliaryUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="1190">
+              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,11 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RPNCalculator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="271" column="5" lean-forward="true" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RPNCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+            <state relative-caret-position="99">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="267">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,6 +125,7 @@
     <findStrings>
       <find>returnValue</find>
       <find>ExpressionFormatException</find>
+      <find>!numbers.isEmpty()</find>
     </findStrings>
     <replaceStrings>
       <replace>RPNException</replace>
@@ -165,12 +166,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorEnum.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/RPNCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java" />
       </list>
     </option>
   </component>
@@ -267,6 +268,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="leewake" type="462c0819:PsiDirectoryNode" />
+              <item name="operator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leewake" type="462c0819:PsiDirectoryNode" />
               <item name="rpn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.ExampleOneTest">
+  <component name="RunManager" selected="JUnit.CalculatorTest.exampleEightTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leewake.Main" />
       <module name="calculator" />
@@ -356,13 +366,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculatorTest.example7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.exampleEightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="example7Test" />
+      <option name="METHOD_NAME" value="exampleEightTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CalculatorTest.exampleOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="exampleOneTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -431,15 +458,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CalculatorTest.plusTest" />
-      <item itemvalue="JUnit.CalculatorTest.example7Test" />
       <item itemvalue="JUnit.CalculatorTest.ExampleOneTest" />
+      <item itemvalue="JUnit.CalculatorTest.exampleEightTest" />
+      <item itemvalue="JUnit.CalculatorTest.exampleOneTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.exampleEightTest" />
+        <item itemvalue="JUnit.CalculatorTest.exampleOneTest" />
         <item itemvalue="JUnit.CalculatorTest.ExampleOneTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CalculatorTest.plusTest" />
-        <item itemvalue="JUnit.CalculatorTest.example7Test" />
       </list>
     </recent_temporary>
   </component>
@@ -453,44 +482,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584586742179</updated>
-      <workItem from="1584586745674" duration="27901000" />
+      <workItem from="1584586745674" duration="31493000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 15h 41m 15s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 06s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 15h 43m 18s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 21s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 15h 51m 40s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 58m 41s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 15h 56m 00s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 59m 24s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 16h 18m 21s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 14h 59m 42s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 16h 19m 13s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 00m 30s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_example7Test - 2020.03.19 at 16h 20m 38s.xml">
-      <configuration name="CalculatorTest.example7Test" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 00m 45s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_plusTest - 2020.03.19 at 17h 42m 47s.xml">
-      <configuration name="CalculatorTest.plusTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 02m 08s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_ExampleOneTest - 2020.03.20 at 14h 05m 20s.xml">
-      <configuration name="CalculatorTest.ExampleOneTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 03m 44s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculatorTest_ExampleOneTest - 2020.03.20 at 14h 05m 41s.xml">
-      <configuration name="CalculatorTest.ExampleOneTest" configurationId="JUnit" />
+    <history-entry file="CalculatorTest_exampleEightTest - 2020.03.20 at 15h 04m 23s.xml">
+      <configuration name="CalculatorTest.exampleEightTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27901000" />
+    <option name="totallyTimeSpent" value="31493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -542,11 +571,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), &quot;and &quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stringBuilder.replace(stringBuilder.length() - 2, stringBuilder.length(), &quot;and &quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>item.getCode().equals(code)</expression-string>
         <language-id>JAVA</language-id>
@@ -579,11 +618,6 @@
       </expression>
       <expression>
         <expression-string>BigDecimal.valueOf(token)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>e.getCode()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -704,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CaculateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -741,46 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <marker date="1584684515000" expanded="true" signature="687:1299" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -792,10 +779,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1584684515000" expanded="true" signature="687:1299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/rpn/RPNCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        <state relative-caret-position="99">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="848" column="33" selection-start-line="848" selection-start-column="33" selection-end-line="848" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="271" column="5" lean-forward="true" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/AuxiliaryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leewake/operator/OperatorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -819,7 +868,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -831,7 +880,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Python 2.7 (scms) interpreter library</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

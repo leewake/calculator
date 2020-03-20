@@ -15,6 +15,7 @@ public class OperatorUtil {
         try {
             new BigDecimal(number);
         } catch (Exception e) {
+            // 会抛出NumberFormatException
             return false;
         }
         return true;
@@ -64,8 +65,27 @@ public class OperatorUtil {
         if (num.compareTo(BigDecimal.ZERO) < 0) {
             throw new RPNException("负数不能开平方!");
         }
-        BigDecimal sqrtNum = sqrt(num, 2);
+        BigDecimal sqrtNum = sqrt(num);
         numbers.push(sqrtNum);
+    }
+
+    /**
+     * <B>Description:</B> 牛顿下山法去开方 <br>
+     * <B>Create on:</B> 2020/3/19 下午8:13 <br>
+     *
+     * @author leewake
+     */
+    public static BigDecimal sqrt(BigDecimal value) {
+        BigDecimal num2 = BigDecimal.valueOf(2);
+        int precision = 100;
+        MathContext mc = new MathContext(precision, RoundingMode.HALF_UP);
+        BigDecimal deviation = value;
+        int cnt = 0;
+        while (cnt < precision) {
+            deviation = (deviation.add(value.divide(deviation, mc))).divide(num2, mc);
+            cnt++;
+        }
+        return deviation;
     }
 
     /**
@@ -78,9 +98,10 @@ public class OperatorUtil {
 
         // 将栈内数据清空
         //TODO 是否可以使用clear
-        while (!numbers.isEmpty()) {
+     /*   while (!numbers.isEmpty()) {
             numbers.pop();
-        }
+        }*/
+        numbers.clear();
 
         // 将上一步的操作数据存入操作数栈中
         if (!logList.isEmpty()) {
@@ -102,33 +123,14 @@ public class OperatorUtil {
      */
     public static void clear(Stack<BigDecimal> numbers, Stack<List<BigDecimal>> logList, String operator) throws RPNException {
         // 清理栈里的数据
-        while (!numbers.isEmpty()) {
+        /*while (!numbers.isEmpty()) {
             numbers.pop();
-        }
-        // 清理动作在日志栈里存入null，用于回退时区分
+        }*/
+        numbers.clear();
+        // 当清屏操作时,日志栈里存入null,便于回退时区分
         List<BigDecimal> list = new ArrayList<>();
         list.add(null);
         logList.push(list);
-    }
-
-    /**
-     * <B>Description:</B> 牛顿下山法去开方 <br>
-     * <B>Create on:</B> 2020/3/19 下午8:13 <br>
-     *
-     * @author leewake
-     */
-    public static BigDecimal sqrt(BigDecimal value, int scale) {
-        BigDecimal num2 = BigDecimal.valueOf(2);
-        int precision = 100;
-        MathContext mc = new MathContext(precision, RoundingMode.HALF_UP);
-        BigDecimal deviation = value;
-        int cnt = 0;
-        while (cnt < precision) {
-            deviation = (deviation.add(value.divide(deviation, mc))).divide(num2, mc);
-            cnt++;
-        }
-        deviation = deviation.setScale(scale, BigDecimal.ROUND_HALF_UP);
-        return deviation;
     }
 
 }
