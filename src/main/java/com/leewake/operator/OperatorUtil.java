@@ -1,6 +1,6 @@
 package com.leewake.operator;
 
-import com.leewake.RPNException;
+import com.leewake.rpn.RPNException;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -13,7 +13,7 @@ public class OperatorUtil {
 
     public static boolean isNumber(String number) {
         try {
-            Double.valueOf(number);
+            new BigDecimal(number);
         } catch (Exception e) {
             return false;
         }
@@ -26,26 +26,26 @@ public class OperatorUtil {
      *
      * @author leewake
      */
-    public static void baseCalculate(Stack<Double> numbers, String operator) throws RPNException {
+    public static void baseCalculate(Stack<BigDecimal> numbers, String operator) throws RPNException {
         // 按照从左向右计算，则先弹出栈顶的数据是：被除数。
-        double num2 = numbers.pop();
-        double num1 = numbers.pop();
+        BigDecimal num2 = numbers.pop();
+        BigDecimal num1 = numbers.pop();
 
         switch (operator) {
             case "+":
-                numbers.push(num1 + num2);
+                numbers.push(num1.add(num2));
                 break;
             case "-":
-                numbers.push(num1 - num2);
+                numbers.push(num1.subtract(num2));
                 break;
             case "*":
-                numbers.push(num1 * num2);
+                numbers.push(num1.multiply(num2));
                 break;
             case "/":
-                if (num2 == 0) {
+                if (BigDecimal.ZERO.equals(num2)) {
                     throw new RPNException("Dividend cannot be zero!");
                 }
-                numbers.push(num1 / num2);
+                numbers.push(num1.divide(num2));
                 break;
             default:
                 throw new RPNException("RPN expression has error!");
@@ -59,12 +59,12 @@ public class OperatorUtil {
      * @param operator
      * @throws Exception
      */
-    public static void sqrt(Stack<Double> numbers, String operator) throws RPNException {
-        double num = numbers.pop();
-        if (num < 0) {
+    public static void sqrt(Stack<BigDecimal> numbers, String operator) throws RPNException {
+        BigDecimal num = numbers.pop();
+        if (num.compareTo(BigDecimal.ZERO) < 0) {
             throw new RPNException("负数不能开平方!");
         }
-        double sqrtNum = (double) Math.sqrt(num);
+        BigDecimal sqrtNum = sqrt(num, 2);
         numbers.push(sqrtNum);
     }
 
@@ -74,7 +74,7 @@ public class OperatorUtil {
      *
      * @author leewake
      */
-    public static void undo(Stack<Double> numbers, Stack<List<Double>> logList, String operator) throws RPNException {
+    public static void undo(Stack<BigDecimal> numbers, Stack<List<BigDecimal>> logList, String operator) throws RPNException {
 
         // 将栈内数据清空
         //TODO 是否可以使用clear
@@ -85,10 +85,10 @@ public class OperatorUtil {
         // 将上一步的操作数据存入操作数栈中
         if (!logList.isEmpty()) {
             logList.pop();// 弹出计算结果的日志
-            List<Double> numbersLog = logList.peek();// 获取计算前的栈数据
-            for (Double d : numbersLog) {
-                if (d != null) {
-                    numbers.push(d);
+            List<BigDecimal> numbersLog = logList.peek();// 获取计算前的栈数据
+            for (BigDecimal num : numbersLog) {
+                if (num != null) {
+                    numbers.push(num);
                 }
             }
         }
@@ -100,13 +100,13 @@ public class OperatorUtil {
      *
      * @author leewake
      */
-    public static void clear(Stack<Double> numbers, Stack<List<Double>> logList, String operator) throws RPNException {
+    public static void clear(Stack<BigDecimal> numbers, Stack<List<BigDecimal>> logList, String operator) throws RPNException {
         // 清理栈里的数据
         while (!numbers.isEmpty()) {
             numbers.pop();
         }
         // 清理动作在日志栈里存入null，用于回退时区分
-        List<Double> list = new ArrayList<>();
+        List<BigDecimal> list = new ArrayList<>();
         list.add(null);
         logList.push(list);
     }

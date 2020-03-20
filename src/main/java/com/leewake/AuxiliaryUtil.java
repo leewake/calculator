@@ -1,5 +1,6 @@
 package com.leewake;
 
+import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -14,9 +15,9 @@ public class AuxiliaryUtil {
      *
      * @author leewake
      */
-    public static void addLogList(Stack<Double> numbers, Stack<List<Double>> logList) {
-        List<Double> numbersList = new ArrayList<>();
-        for (Double d : numbers) {
+    public static void addLogList(Stack<BigDecimal> numbers, Stack<List<BigDecimal>> logList) {
+        List<BigDecimal> numbersList = new ArrayList<>();
+        for (BigDecimal d : numbers) {
             numbersList.add(d);
         }
         logList.push(numbersList);
@@ -28,11 +29,11 @@ public class AuxiliaryUtil {
      *
      * @author leewake
      */
-    public static  void printStack(Stack<Double> numbers) {
+    public static  void printStack(Stack<BigDecimal> numbers) {
         System.out.print("stack: ");
         if(!numbers.isEmpty()) {
-            for(double d : numbers) {
-                System.out.print(numberFormat(d) + " ");
+            for(BigDecimal num : numbers) {
+                System.out.print(numberFormat(num) + " ");
             }
         }
         System.out.println();
@@ -53,7 +54,7 @@ public class AuxiliaryUtil {
      *
      * @author leewake
      */
-    public static String numberFormat(double number) {
+    public static String numberFormat(BigDecimal number) {
         DecimalFormat numFormat = new DecimalFormat("##########.##########");
         numFormat.setRoundingMode(RoundingMode.DOWN);// 舍去末尾
         String output = numFormat.format(number);

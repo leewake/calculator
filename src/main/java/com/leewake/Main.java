@@ -1,5 +1,8 @@
 package com.leewake;
 
+import com.leewake.rpn.RPNCalculator;
+import com.leewake.rpn.RPNException;
+
 import java.util.Scanner;
 
 /**
